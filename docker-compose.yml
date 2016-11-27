@@ -7,6 +7,9 @@ services:
       - /dev/ttyAMA0
     cap_add:
       - SYS_RAWIO
+    environment:
+      DB: homecenter
+      COLLECTION: edf
     links:
       - mongodb
   mongodb:
