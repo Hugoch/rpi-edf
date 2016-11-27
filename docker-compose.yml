@@ -6,3 +6,8 @@ services:
       - mongodb
   mongodb:
     image: cretzel/rpi-mongodb
+    volumes:
+      - mongodb-data:/data
+volumes:
+  mongodb-data:
+    driver: local
