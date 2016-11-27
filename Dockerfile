@@ -1,6 +1,6 @@
 # Pull base image
 FROM resin/rpi-raspbian:wheezy
-MAINTAINER Dieter Reuter <dieter@hypriot.com>
+MAINTAINER Hugo Larcher <hugo.larcher@gmail.com>
 
 # Install dependencies
 RUN apt-get update && apt-get install -y \

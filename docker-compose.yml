@@ -1,0 +1,8 @@
+version: '2.1'
+services:
+  edf:
+    build: .
+    links:
+      - mongodb
+  mongodb:
+    image: cretzel/rpi-mongodb
