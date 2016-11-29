@@ -10,8 +10,6 @@ services:
     environment:
       DB: homecenter
       COLLECTION: edf
-    links:
-      - mongodb:mongodb
   mongodb:
     image: cretzel/rpi-mongodb
     ports:
