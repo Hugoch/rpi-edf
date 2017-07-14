@@ -10,12 +10,16 @@ services:
     environment:
       DB: homecenter
       COLLECTION: edf
+      TZ: Europe/Paris
   mongodb:
-    image: cretzel/rpi-mongodb
+    image: jixer/rpi-mongo:2.4
     ports:
       - "27017:27017"
+      - "27018:27018"
     volumes:
       - mongodb-data:/data/db
+    environment:
+      TZ: Europe/Paris
 volumes:
   mongodb-data:
     driver: local
