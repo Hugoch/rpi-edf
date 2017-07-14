@@ -1,5 +1,5 @@
 # Pull base image
-FROM resin/rpi-raspbian:wheezy
+FROM resin/raspberry-pi-alpine
 MAINTAINER Hugo Larcher <hugo.larcher@gmail.com>
 
 # Install dependencies
